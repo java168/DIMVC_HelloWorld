@@ -1,0 +1,31 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+@section featured {
+    <section class="featured">
+        <div class="content-wrapper">
+            <hgroup class="title">
+               
+            </hgroup>
+
+            @using (Html.BeginForm())
+            {
+
+                <div>
+                  
+                    Message: @ViewData["Message"]<br />
+                   
+                </div>
+                <br />
+              
+                
+                <label for="Message">Enter Message:</label>
+                <input type="text" name="Message" />
+                <br />
+                <input type="submit" name="submit"  value="submit"/>
+            }
+            </p>
+        </div>
+    </section>
+}
+
